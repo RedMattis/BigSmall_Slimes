@@ -1,0 +1,92 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_SludgeBody</li>
+			<li>BS_SlimeBlobBody</li>
+      <li>BS_SlimeFractureBody</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_SludgeBody</li>
+			<li>BS_SlimeBlobBody</li>
+      <li>BS_SlimeFractureBody</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_SludgeBody</li>
+			<li>BS_SlimeBlobBody</li>
+      <li>BS_SlimeFractureBody</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_SludgeBody</li>
+			<li>BS_SlimeBlobBody</li>
+      <li>BS_SlimeFractureBody</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_SludgeBody</li>
+			<li>BS_SlimeBlobBody</li>
+      <li>BS_SlimeFractureBody</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_SludgeBody</li>
+			<li>BS_SlimeBlobBody</li>
+      <li>BS_SlimeFractureBody</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>BS_SludgeBody</li>
+          <li>BS_SlimeBlobBody</li>
+          <li>BS_SlimeFractureBody</li>
+          <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+          <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]/nullifyingGenes</xpath>
+			<value>
+				<li>BS_SludgeBody</li>
+        <li>BS_SlimeBlobBody</li>
+        <li>BS_SlimeFractureBody</li>
+        <li MayRequire="erdelf.HumanoidAlienRaces">BS_SludgeBodySwitcher</li>
+        <li MayRequire="erdelf.HumanoidAlienRaces">BS_SlimeBodySwitcher</li>
+			</value>
+		</match>
+	</Operation>
+  
+
+</Patch>

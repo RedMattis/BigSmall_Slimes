@@ -1,0 +1,320 @@
+<Defs>
+
+
+  <HediffDef>
+    <defName>BS_SlimeMetabolism</defName>
+    <label>Slime</label>
+    <description>This character is composed of a semi-homongeous slime. Their abilities change based on their size. Going above 200% or below 40% will have detrimental side-effects</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <label>diminutive</label>
+        <extraTooltip>I've gotten too small to properly function. GIVE ME FOOD!</extraTooltip>
+        <statFactors>
+          <SM_BodySizeMultiplier>0.20</SM_BodySizeMultiplier>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.30</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>itty-bitty</label>
+        <extraTooltip>I am the strange noise from inside of your airducts! I am the little critter that eats all your cheese! I am... A Tiny Slime!</extraTooltip>
+        <minSeverity>0.24</minSeverity>
+        <statFactors>
+          <SM_BodySizeMultiplier>0.40</SM_BodySizeMultiplier>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.45</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>tiny</label>
+        <minSeverity>0.49</minSeverity>
+        <extraTooltip>Optimal size for stealth!</extraTooltip>
+        <statFactors>
+          <SM_BodySizeMultiplier>0.60</SM_BodySizeMultiplier>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>small</label>
+        <minSeverity>0.70</minSeverity>
+        <extraTooltip>A bit smaller, but a lot more agile.</extraTooltip>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <label>standard</label>
+      </li>
+
+      <li>
+        <minSeverity>1.24</minSeverity>
+        <label>sizable</label>
+        <extraTooltip>A bit larger, but not unmanageably so</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>.25</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>1.5</minSeverity>
+        <label>large-ish</label>
+        <extraTooltip>A bit larger, but not unmanageably so</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>.50</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>1.75</minSeverity>
+        <label>large</label>
+        <extraTooltip>A bit larger, but not unmanageably so</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.8</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>.75</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.125</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.125</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>2</minSeverity>
+        <label>very big</label>
+        <extraTooltip>That up-sized brain really helps with mental exercises</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.7</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>1</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>2.33</minSeverity>
+        <label>giant</label>
+        <extraTooltip>Okay, this is starting to get a bit too much.</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.65</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>1.33</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.12</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>2.66</minSeverity>
+        <label>massive</label>
+        <extraTooltip>Okay, this is getting a bit unmanageable.</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.6</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>1.66</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>3</minSeverity>
+        <label>gigantic</label>
+        <extraTooltip>Okay, this is getting unmanageable. I can barely move around.</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.55</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>2</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>3.5</minSeverity>
+        <label>colossal</label>
+        <extraTooltip>Okay, this is getting unmanageable, I'm starting to lose cohesion</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.5</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>2.5</SM_BodySizeOffset>
+        </statOffsets>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>4</minSeverity>
+        <label>titanic</label>
+        <extraTooltip>I'm much too big and I'm losing cohesion, this is really quite unpleasant.</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.45</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>3</SM_BodySizeOffset>
+        </statOffsets>
+        <painOffset>0.10</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>4.5</minSeverity>
+        <label>behemoth</label>
+        <extraTooltip>I'm MUCH too big and I'm badly losing coheris-uh coherere-ack! This is not pleasant!</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.4</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>3.5</SM_BodySizeOffset>
+        </statOffsets>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>5</minSeverity>
+        <label>ginormous</label>
+        <extraTooltip>I feel like I'd be faster if I roll. roll? Rolled? Wait, what was I talking about?</extraTooltip>
+        <statFactors>
+          <MoveSpeed>0.35</MoveSpeed>
+        </statFactors>
+        <painOffset>0.25</painOffset>
+        <statOffsets>
+          <SM_BodySizeOffset>4</SM_BodySizeOffset>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.30</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

@@ -1,0 +1,38 @@
+<Patch>
+
+
+  <!-- <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GeneDef[defName="BS_SludgeBody"]/modExtensions</xpath>
+    <value>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<thingDefSwap>BS_Sludge</thingDefSwap>
+			</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GeneDef[defName="BS_SlimeBlobBody"]/modExtensions</xpath>
+    <value>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<thingDefSwap>BS_Slime</thingDefSwap>
+			</li>
+    </value>
+  </Operation> -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="BS_GreenSlime" or defName="BS_EmperorSlime" or defName="BS_PinkSlime"
+      or defName="BS_FrostSlime" or defName="BS_BananaSplitSlime" or defName="BS_LavaSlime" or defName="BS_LavaSlimeGiant" 
+      or defName="BS_FrostSlimeGiant"  or defName="BS_BananaSplitSlimeGiant" ]/genes</xpath>
+    <value>
+      <li>BS_SlimeBodySwitcher</li>
+    </value>
+  </Operation> 
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/XenotypeDef[defName="BS_ElixirSlime" or defName="BS_ToxicSlduge"]/genes</xpath>
+    <value>
+      <li>BS_SludgeBodySwitcher</li>
+    </value>
+  </Operation> 
+  
+</Patch>

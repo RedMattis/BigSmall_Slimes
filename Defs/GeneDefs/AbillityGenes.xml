@@ -1,0 +1,307 @@
+<Defs>
+
+  <GeneDef>
+    <defName>BS_SlimeJump</defName>
+    <label>acid bounce</label>
+    <description>Carriers of this gene can bounce away long distances leaving acid in the area they land.</description>
+    <iconPath>Icons/BS_SlimeAcidJump</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>BS_Slime</displayCategory>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <abilities>
+      <li>BS_SlimeJump</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeJump</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeFoamJump</defName>
+    <label>foam bounce</label>
+    <description>Carriers of this gene can bounce away long distances leaving firefoam in the area they land.</description>
+    <iconPath>Icons/BS_SlimeFoamJump</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>BS_Slime</displayCategory>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <abilities>
+      <li>BS_SlimeFoamJump</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeFoamJump</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_FireSlimeJump</defName>
+    <label>fire bounce</label>
+    <description>Carriers of this gene can bounce away long distances igniting the area around where they land.</description>
+    <iconPath>GeneIcons/BS_FireJump</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>BS_Slime</displayCategory>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <abilities>
+      <li>BS_SlimeFireJump</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeFireJump</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeAcidSpit</defName>
+    <label>greater acid spit</label>
+    <description>Carriers of this gene can throw a large amount of their acidic body in an area.</description>
+    <iconPath>UI/Abilities/AcidSpray</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>BS_Slime</displayCategory>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <abilities>
+      <li>BS_Slime_Acidspray</li>
+      <li>BS_SlimeGreater_Acidspray</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_Slime_Acidspray</AbilityDef>
+      <AbilityDef>BS_SlimeGreater_Acidspray</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeFireSpit</defName>
+    <label>flammable slime spit</label>
+    <description>Carriers of this gene can throw a small amount of burning slime in an area.</description>
+    <iconPath>GeneIcons/BS_Fireball</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>BS_Slime</displayCategory>
+    <abilities>
+      <li>BS_SlimeFireSpew</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeFireSpew</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeEngulf</defName>
+    <label>engulf</label>
+    <!-- <displayCategory>Archite</displayCategory> -->
+    <description>Temporarily engulf a smaller target to slowly to them for a period of time. This can be very dangerous since the victim can cause severe injuries from the inside; especially skilled and armed with a melee weapon.</description>
+    <customEffectDescriptions>
+      <li>Up to 80% of bodysize.</li>
+      <li>8 Base Damage (Acid)</li>
+      <li>Victim deals 75% damage</li>
+    </customEffectDescriptions>
+    <iconPath>Icons/BS_Engulf</iconPath>
+    <abilities>
+      <li>BS_SlimeEngulf</li>
+      <li>BS_SlimeRegurgitate</li>
+    </abilities>
+    <displayCategory>BS_Slime</displayCategory>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeEngulf</AbilityDef>
+      <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>1</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>BS_SlimeResource</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeEngulfElixir</defName>
+    <label>elixir engulf</label>
+    <!-- <displayCategory>Archite</displayCategory> -->
+    <description>Temporarily engulf a smaller target to halt progress of any dangerous medical conditions and heal them while suspended. The target will slowly have their injuries healed. If the target is currently hostile they will resist being fully suspended and will attack occasionally to get free.\n\nIf the target is ejected before all wounds have healed there is a raised chance of infection</description>
+    <customEffectDescriptions>
+      <li>Up to 80% of bodysize.</li>
+      <li>Heals 50 Damage per day + Natural healing</li>
+      <li>Can heals scars</li>
+      <li>Restores one missing body part every other day.</li>
+      <li>Victim deals 75% damage if hostile.</li>
+    </customEffectDescriptions>
+    <iconPath>Icons/BS_ElixirSlime</iconPath>
+    <abilities>
+      <li>BS_SlimeEngulfElixir</li>
+      <li>BS_SlimeRegurgitate</li>
+    </abilities>
+    <displayCategory>BS_Slime</displayCategory>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeEngulfElixir</AbilityDef>
+      <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatArc>3</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>BS_SlimeResource</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeProliferation</defName>
+    <label>proliferation</label>
+    <!-- <displayCategory>Archite</displayCategory> -->
+    <description>Carriers of this gene can create a baby based on the genes of this pawn and optionally also those of a another pawn with the same gene.</description>
+    <iconPath>Icons/BS_SlimeProliferation</iconPath>
+    <abilities>
+      <li>BS_SlimeProliferation</li>
+    </abilities>
+    <displayCategory>BS_Slime</displayCategory>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeProliferation</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>0</biostatMet>
+    <biostatArc>1</biostatArc>
+    <minAgeActive>18</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeCoagulate</defName>
+    <label>heal slime</label>
+    <labelShortAdj>coagulator</labelShortAdj>
+    <description>Mend the wounds of target using regenerative slime. Tends injuries with a very high quality. Can target self. Very short cast-time.</description>
+    <iconPath>Icons/BS_HealSlime</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <displayCategory>BS_Slime</displayCategory>
+    <abilities>
+      <li>BS_SlimeCoagulate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SlimeCoagulate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <suffixSymbols>
+        <li><symbol>life-giver</symbol></li>
+        <li><symbol>clotter</symbol></li>
+        <li><symbol>tender</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+
+</Defs>

@@ -1,0 +1,67 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_SlimeResource</defName>
+    <label>slime composition</label>
+    <description>Carriers of this genes are composed of a semi-homogeneous slime. They can become smaller and more agile by eating less.</description>
+    <iconPath>Icons/BS_Slime</iconPath>
+    <geneClass>BigAndSmall.BS_GeneSlimePower</geneClass>
+    <resourceGizmoType>BigAndSmall.GeneGizmo_ResourceSlime</resourceGizmoType>
+    <resourceLabel>slime</resourceLabel>
+    <displayCategory>BS_Slime</displayCategory>
+    <resourceGizmoThresholds>
+      <li>0.25</li>
+      <li>0.5</li>
+      <li>0.75</li>
+    </resourceGizmoThresholds>
+    <showGizmoOnWorldView>true</showGizmoOnWorldView>
+    <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+    <exclusionTags>
+      <li>Eats</li>
+    </exclusionTags>
+    <statFactors>
+      <SM_ConcussiveDmgMult>0.9</SM_ConcussiveDmgMult>
+    </statFactors>
+    <biostatMet>-1</biostatMet>
+    <!-- <biostatArc>1</biostatArc> -->
+    <minAgeActive>3</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BigAndSmall.BS_GeneSlimeProps">
+        <resourceMaxOffset>0.25</resourceMaxOffset>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlimeGrowth</defName>
+    <label>slime accumulation</label>
+    <displayCategory>BS_Slime</displayCategory>
+    <description>Carriers of this genes can absorb additional food to become larger. Their Slime resource can now go above 100% very high levels will have detrimental side-effects however</description>
+    <iconPath>Icons/BS_Slime_resource</iconPath>
+    <prerequisite>BS_SlimeResource</prerequisite>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <biostatMet>-3</biostatMet>
+    <biostatArc>0</biostatArc>
+    <minAgeActive>3</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <statFactors>
+			<SM_RaidWealthMultiplier>1.25</SM_RaidWealthMultiplier>
+		</statFactors>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BigAndSmall.BS_GeneSlimeProps">
+        <resourceMaxOffset>2.75</resourceMaxOffset>
+        <resourceStartOffset>0.5</resourceStartOffset>
+			</li>
+		</modExtensions>
+  </GeneDef>
+</Defs>

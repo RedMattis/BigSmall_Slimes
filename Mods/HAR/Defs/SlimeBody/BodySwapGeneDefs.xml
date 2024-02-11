@@ -1,0 +1,53 @@
+<Defs>
+
+  <GeneDef>
+		<defName>BS_SludgeBodySwitcher</defName>
+		<label>sludge body switch</label>
+		<labelShortAdj>sludge body</labelShortAdj>
+		<description>Carriers of this gene have sludgy slime body barely remotely similar to that of baseline humans.</description>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>430</displayOrderInCategory>
+		<iconPath>Icons/bs_slimebody</iconPath>
+    <displayCategory>BS_Slime</displayCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <exclusionTags>
+      <li>ThingDefSwap</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<thingDefSwap>BS_Sludge</thingDefSwap>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+
+	<GeneDef>
+		<defName>BS_SlimeBodySwitcher</defName>
+		<label>slime blob body switch</label>
+		<labelShortAdj>slime body</labelShortAdj>
+		<description>Carriers of this gene have slime body that only at best superficially resembles a baseliner.</description>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>430</displayOrderInCategory>
+    <displayCategory>BS_Slime</displayCategory>
+		<iconPath>Icons/bs_slimebody_smooth</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <exclusionTags>
+      <li>ThingDefSwap</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<thingDefSwap>BS_Slime</thingDefSwap>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>
