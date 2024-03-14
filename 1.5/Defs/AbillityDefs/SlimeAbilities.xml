@@ -1,0 +1,289 @@
+<Defs>
+
+  <AbilityDef>
+    <defName>BS_SlimeJump</defName>
+    <label>slime jump</label>
+    <description>Jump to a distant location.</description>
+    <iconPath>Icons/BS_SlimeAcidJump</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>14.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.20</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>BS_Proj_Acid</projectileDef>
+        <radiusToHit>1</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_SlimeFoamJump</defName>
+    <label>slime foam jump</label>
+    <description>Jump to a distant location and cover it in fire foam.</description>
+    <iconPath>Icons/BS_SlimeAcidJump</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>14.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.15</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>Proj_Foam_Ability</projectileDef>
+        <radiusToHit>2</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_SlimeFireJump</defName>
+    <label>flaming slime jump</label>
+    <description>Jump to a distant location.</description>
+    <iconPath>Icons/BS_SlimeFireJump</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>14.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.20</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>BS_Proj_Fire</projectileDef>
+        <radiusToHit>1</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_Slime_Acidspray</defName>
+    <label>slime acid throw</label>
+    <description>Throw a moderate amount of acid at a nearby place.</description>
+    <iconPath>UI/Abilities/AcidSpray</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>101</displayOrder>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>13.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.125</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>BS_Proj_Acid</projectileDef>
+        <radiusToHit>1</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_SlimeGreater_Acidspray</defName>
+    <label>slime greater acid throw</label>
+    <description>Throw a huge amount of acid at a nearby place.</description>
+    <iconPath>UI/Abilities/AcidSpray</iconPath>
+    <cooldownTicksRange>5000</cooldownTicksRange>
+    <aiCanUse>false</aiCanUse>
+    <displayOrder>101</displayOrder>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>8.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.50</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>BS_Proj_Acid</projectileDef>
+        <radiusToHit>2</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+
+  <AbilityDef>
+    <defName>BS_SlimeFireSpew</defName>
+    <label>magma spew</label>
+    <description>Spit a stream of burning liquid from the mouth that ignite anything or anyone it hits.</description>
+    <iconPath>GeneIcons/BS_Fireball</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>101</displayOrder>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>8.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.25</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>BS_Proj_Fire</projectileDef>
+        <radiusToHit>2</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_SlimeCoagulate</defName>
+    <label>heal slime</label>
+    <description>Heal the target using regenerative slime. Heal injuries with a very high tend quality. Can target self. Short cast-time.</description>
+    <iconPath>Icons/BS_HealSlime</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <!-- <category>Sanguophage</category> -->
+    <displayOrder>400</displayOrder>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>0.2</warmupTime>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>0.1</resourceCost>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.7~1.1</tendQualityRange>
+      </li>
+      <!-- <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Manipulation</capacity>
+      </li> -->
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_SlimeProliferation</defName>
+    <label>slime proliferation</label>
+    <description>Create a baby based on the genes of this pawn and optionally also those of a another pawn with the same gene.</description>
+    <iconPath>Icons/BS_SlimeProliferation</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <!-- <category>Sanguophage</category> -->
+    <displayOrder>400</displayOrder>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>5</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_SlimeCost">
+        <resourceCost>1.0</resourceCost>
+      </li>
+      <li Class="BigAndSmall.CompProperties_SlimeProliferation">
+      </li>
+      <!-- <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Manipulation</capacity>
+      </li> -->
+    </comps>
+  </AbilityDef>
+  
+
+</Defs>
