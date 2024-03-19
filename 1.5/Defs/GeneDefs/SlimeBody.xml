@@ -1,65 +1,57 @@
+<?xml version="1.0" ?>
 <Defs>
   <GeneCategoryDef>
     <defName>BS_Slime</defName>
     <label>Slime</label>
     <displayPriorityInXenotype>-389</displayPriorityInXenotype>
   </GeneCategoryDef>
-
-
   <GeneDef ParentName="BS_BodyBase">
-		<defName>BS_SludgeBody</defName>
-		<label>sludge body apperance</label>
-		<labelShortAdj>sludge body</labelShortAdj>
-		<description>Carriers of this gene have sludgy slime body.</description>
-		<biostatCpx>1</biostatCpx>
-		<selectionWeight>0</selectionWeight>
-		<displayOrderInCategory>430</displayOrderInCategory>
-		<iconPath>Icons/bs_slimebody</iconPath>
+    <defName>BS_SludgeBody</defName>
+    <label>sludge body apperance</label>
+    <labelShortAdj>sludge body</labelShortAdj>
+    <description>Carriers of this gene have sludgy slime body.</description>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>Icons/bs_slimebody</iconPath>
     <displayCategory>BS_Slime</displayCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
-		<graphicData>
-			<fur>BS_SlimeBody</fur>
-			<tattoosVisible>false</tattoosVisible>
-			<useSkinShader>true</useSkinShader>
-			<colorType>Skin</colorType>
-			<skinIsHairColor>true</skinIsHairColor>
-		</graphicData>
-		<forcedHeadTypes>
+    <forcedHeadTypes>
       <li>BS_SlimeHead</li>
     </forcedHeadTypes>
-		<beardTagFilter>
+    <beardTagFilter>
       <whitelist>true</whitelist>
       <tags>
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <!-- <dontColourFur>true</dontColourFur> -->
-        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
-			</li>
-		</modExtensions>
-	</GeneDef>
-
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
   <FurDef>
     <defName>BS_SlimeBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Hulk>Humanlike/Bodies/Slime/Naked_Hulk</Hulk>
-
       <Male>Humanlike/Bodies/Slime/Naked_Male</Male>
       <Female>Humanlike/Bodies/Slime/Naked_Female</Female>
-      
       <Fat>Humanlike/Bodies/Slime/Naked_Fat</Fat>
       <Thin>Humanlike/Bodies/Slime/Naked_Thin</Thin>
-      
       <Child>Humanlike/Bodies/BS_NoFur</Child>
       <Baby>Humanlike/Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
-
   <HeadTypeDef ParentName="AverageBase">
     <defName>BS_SlimeHead</defName>
     <graphicPath>Humanlike/Heads/Slime/normal</graphicPath>
@@ -70,103 +62,89 @@
       <li>BS_SludgeBody</li>
     </requiredGenes>
   </HeadTypeDef>
-
-	<GeneDef ParentName="BS_BodyBase">
-		<defName>BS_SlimeBlobBody</defName>
-		<label>slime body appearance</label>
-		<labelShortAdj>slime body</labelShortAdj>
-		<description>Carriers of this gene have bouncy slime body.</description>
-		<biostatCpx>1</biostatCpx>
-		<selectionWeight>0</selectionWeight>
-		<displayOrderInCategory>430</displayOrderInCategory>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_SlimeBlobBody</defName>
+    <label>slime body appearance</label>
+    <labelShortAdj>slime body</labelShortAdj>
+    <description>Carriers of this gene have bouncy slime body.</description>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
     <displayCategory>BS_Slime</displayCategory>
-		<iconPath>Icons/bs_slimebody_smooth</iconPath>
+    <iconPath>Icons/bs_slimebody_smooth</iconPath>
     <geneClass>BetterPrerequisites.PGene</geneClass>
-		<graphicData>
-			<fur>BS_SlimeSmoothBody</fur>
-			<tattoosVisible>false</tattoosVisible>
-			<useSkinShader>true</useSkinShader>
-			<colorType>Skin</colorType>
-			<skinIsHairColor>true</skinIsHairColor>
-		</graphicData>
-		<beardTagFilter>
+    <beardTagFilter>
       <whitelist>true</whitelist>
       <tags>
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <!-- <dontColourFur>true</dontColourFur> -->
-        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
-			</li>
-		</modExtensions>
-	</GeneDef>
-
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
   <FurDef>
     <defName>BS_SlimeSmoothBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Hulk>Humanlike/Bodies/SmoothSlime/Naked_Hulk</Hulk>
-
       <Male>Humanlike/Bodies/SmoothSlime/Naked_Male</Male>
       <Female>Humanlike/Bodies/SmoothSlime/Naked_Female</Female>
-      
       <Fat>Humanlike/Bodies/SmoothSlime/Naked_Fat</Fat>
       <Thin>Humanlike/Bodies/SmoothSlime/Naked_Thin</Thin>
-      
       <Child>Humanlike/Bodies/BS_NoFur</Child>
       <Baby>Humanlike/Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
-
   <GeneDef ParentName="BS_BodyBase">
-		<defName>BS_SlimeFractureBody</defName>
-		<label>slime fracture body</label>
-		<labelShortAdj>fracture</labelShortAdj>
-		<description>Carriers of this gene have slime body with cracks across it.</description>
-		<biostatCpx>1</biostatCpx>
-		<selectionWeight>0</selectionWeight>
-		<displayOrderInCategory>430</displayOrderInCategory>
+    <defName>BS_SlimeFractureBody</defName>
+    <label>slime fracture body</label>
+    <labelShortAdj>fracture</labelShortAdj>
+    <description>Carriers of this gene have slime body with cracks across it.</description>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
     <displayCategory>BS_Slime</displayCategory>
-		<iconPath>Icons/bs_slimebody_creck</iconPath>
-		<graphicData>
-			<fur>BS_SlimeFractureBody</fur>
-			<tattoosVisible>false</tattoosVisible>
-			<useSkinShader>true</useSkinShader>
-			<colorType>Skin</colorType>
-			<skinIsHairColor>true</skinIsHairColor>
-		</graphicData>
-		<beardTagFilter>
+    <iconPath>Icons/bs_slimebody_creck</iconPath>
+    <beardTagFilter>
       <whitelist>true</whitelist>
       <tags>
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <!-- <dontColourFur>true</dontColourFur> -->
-        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
-			</li>
-		</modExtensions>
-	</GeneDef>
-
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
   <FurDef>
     <defName>BS_SlimeFractureBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Hulk>Humanlike/Bodies/CrackedSlime/Naked_Hulk</Hulk>
-
       <Male>Humanlike/Bodies/CrackedSlime/Naked_Male</Male>
       <Female>Humanlike/Bodies/CrackedSlime/Naked_Female</Female>
-      
       <Fat>Humanlike/Bodies/CrackedSlime/Naked_Fat</Fat>
       <Thin>Humanlike/Bodies/CrackedSlime/Naked_Thin</Thin>
-      
       <Child>Humanlike/Bodies/BS_NoFur</Child>
       <Baby>Humanlike/Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>

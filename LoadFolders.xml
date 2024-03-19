@@ -1,7 +1,8 @@
 <loadFolders>
   <v1.4>
     <li>/</li>
-    <li>1.4/Common</li>
+    <li>Common</li>
+    <li>1.4</li>
     <!-- <li IfModActive="RedMattis.LamiasAndOtherSnakes">Mods/Snek</li> -->
     <li IfModActive="nals.facialanimation">1.4/Mods/FacialAnim</li>
     <li IfModActive="RedMattis.BigSmall">1.4/Mods/bs_races</li>
@@ -9,7 +10,8 @@
   </v1.4>
   <v1.5>
     <li>/</li>
-    <li>1.5/Common</li>
+    <li>Common</li>
+    <li>1.5</li>
     <!-- <li IfModActive="RedMattis.LamiasAndOtherSnakes">Mods/Snek</li> -->
     <li IfModActive="nals.facialanimation">1.5/Mods/FacialAnim</li>
     <li IfModActive="RedMattis.BigSmall">1.5/Mods/bs_races</li>
