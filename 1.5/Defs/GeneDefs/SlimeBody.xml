@@ -16,6 +16,9 @@
     <iconPath>Icons/bs_slimebody</iconPath>
     <displayCategory>BS_Slime</displayCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
+    <fur>BS_SlimeBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>true</skinIsHairColor>
     <forcedHeadTypes>
       <li>BS_SlimeHead</li>
     </forcedHeadTypes>
@@ -35,7 +38,13 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <useSkinShader>true</useSkinShader>
-        <colorType>Skin</colorType>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <!-- <colorType>Skin</colorType> -->
       </li>
     </renderNodeProperties>
   </GeneDef>
@@ -73,6 +82,9 @@
     <displayCategory>BS_Slime</displayCategory>
     <iconPath>Icons/bs_slimebody_smooth</iconPath>
     <geneClass>BetterPrerequisites.PGene</geneClass>
+    <fur>BS_SlimeSmoothBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>true</skinIsHairColor>
     <beardTagFilter>
       <whitelist>true</whitelist>
       <tags>
@@ -89,7 +101,13 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <useSkinShader>true</useSkinShader>
-        <colorType>Skin</colorType>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <!-- <colorType>Skin</colorType> -->
       </li>
     </renderNodeProperties>
   </GeneDef>
@@ -116,6 +134,9 @@
     <displayOrderInCategory>430</displayOrderInCategory>
     <displayCategory>BS_Slime</displayCategory>
     <iconPath>Icons/bs_slimebody_creck</iconPath>
+    <fur>BS_SlimeFractureBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>true</skinIsHairColor>
     <beardTagFilter>
       <whitelist>true</whitelist>
       <tags>
@@ -132,7 +153,13 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <useSkinShader>true</useSkinShader>
-        <colorType>Skin</colorType>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <!-- <colorType>Skin</colorType> -->
       </li>
     </renderNodeProperties>
   </GeneDef>
