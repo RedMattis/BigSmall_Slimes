@@ -1,6 +1,6 @@
 <Defs>
 
-  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+  <AlienRace.ThingDef_AlienRace ParentName="Human">
     <defName>BS_Slime</defName>
     <label>slime-person</label>
     <description>A humanlike slime.</description>
@@ -97,11 +97,11 @@
         <humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
     </alienRace>
-  </ThingDef>
+  </AlienRace.ThingDef_AlienRace>
 
   <!---->
 
-  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+  <AlienRace.ThingDef_AlienRace ParentName="Human">
     <defName>BS_Sludge</defName>
     <label>sapient sludge</label>
     <description>A sapeint sludge-like slime.</description>
@@ -198,5 +198,5 @@
         <humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
     </alienRace>
-  </ThingDef>
+  </AlienRace.ThingDef_AlienRace>
 </Defs>
