@@ -1,0 +1,86 @@
+<Defs>
+  <!--Just kept around to avoid breaking saves due to abilities changing-->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_SlimeEngulf</defName>
+    <label>engulf</label>
+    <description>Engulf a target smaller than yourself.</description>
+    <iconPath>Icons/BS_Engulf</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>true</hostile>
+    <cooldownTicksRange>2000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2.5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>true</aiCanUse>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityEngluf">
+        <!--How large the target can be compared to the lamia. 0.80 means max 80% of body size-->
+        <relativeSizeThreshold>0.8</relativeSizeThreshold>
+        <internalBaseDamage>8</internalBaseDamage>
+        <selfDamageMultiplier>0.75</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+      </li>
+      <!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+        <!-- <fleckDef>BloodSplash</fleckDef> -->
+      <!-- </li> -->
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_SlimeEngulfElixir</defName>
+    <label>elixir engulf</label>
+    <description>Engulf a target smaller than yourself to heal their injuries. Hostile targets will attack back to get free.</description>
+    <iconPath>Icons/BS_ElixirSlime</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>false</hostile>
+    <cooldownTicksRange>2000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2.5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>false</aiCanUse>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityEngluf">
+        <!--How large the target can be compared to the lamia. 0.80 means max 80% of body size-->
+        <relativeSizeThreshold>0.8</relativeSizeThreshold>
+        <dealsDamage>false</dealsDamage>
+        <healPerDay>100</healPerDay><!--For testing. Should be 50.-->
+        <healsScars>true</healsScars>
+        <canHealBrain>false</canHealBrain>
+        <regularHealingMultiplier>1.5</regularHealingMultiplier>
+        <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay>
+        <alliesAttackBack>false</alliesAttackBack>
+        <selfDamageMultiplier>0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+      </li>
+      <!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+        <!-- <fleckDef>BloodSplash</fleckDef> -->
+      <!-- </li> -->
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

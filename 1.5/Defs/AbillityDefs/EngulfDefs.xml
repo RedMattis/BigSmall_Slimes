@@ -1,20 +1,24 @@
 <Defs>
-  <AbilityDef ParentName="AbilityTouchBase">
-    <defName>BS_SlimeEngulf</defName>
+  <AbilityDef>
+    <defName>BS_SlimeEngulf_New</defName>
     <label>engulf</label>
-    <description>Engulf a target smaller than yourself.</description>
+    <description>Jump at and engulf a target smaller than yourself.</description>
     <iconPath>Icons/BS_Engulf</iconPath>
     <displayOrder>100</displayOrder>
-    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
-    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
     <hostile>true</hostile>
     <cooldownTicksRange>2000</cooldownTicksRange>
+    <jobDef>CastJump</jobDef>
     <verbProperties>
-      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <verbClass>BigAndSmall.Verb_CastAbilityJumpON</verbClass>
+      <label>Uh-oh</label>
       <drawAimPie>false</drawAimPie>
-      <range>-1</range>
-      <warmupTime>2.5</warmupTime>
+      <range>3.9</range>
+      <warmupTime>2.0</warmupTime>
+      <soundCast>AcidSpray_Warmup</soundCast>
+      <soundLanding>AcidSpray_Resolve</soundLanding>
+      <requireLineOfSight>true</requireLineOfSight>
       <targetParams>
+        <mustBeSelectable>true</mustBeSelectable>
         <canTargetSelf>false</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>true</canTargetMechs>
@@ -22,61 +26,60 @@
       </targetParams>
     </verbProperties>
     <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
     <comps>
-      <li Class="BigAndSmall.CompProperties_AbilityEngluf">
-        <!--How large the target can be compared to the lamia. 0.80 means max 80% of body size-->
+      <li Class="BigAndSmall.CompProperties_AbilityEnglufJump">
         <relativeSizeThreshold>0.8</relativeSizeThreshold>
         <internalBaseDamage>8</internalBaseDamage>
         <selfDamageMultiplier>0.75</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
       </li>
-      <!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
-        <!-- <fleckDef>BloodSplash</fleckDef> -->
-      <!-- </li> -->
       <li Class="CompProperties_AbilityRequiresCapacity">
         <capacity>Eating</capacity>
       </li>
     </comps>
   </AbilityDef>
 
-  <AbilityDef ParentName="AbilityTouchBase">
-    <defName>BS_SlimeEngulfElixir</defName>
+  <AbilityDef>
+    <defName>BS_SlimeEngulfElixir_New</defName>
     <label>elixir engulf</label>
     <description>Engulf a target smaller than yourself to heal their injuries. Hostile targets will attack back to get free.</description>
     <iconPath>Icons/BS_ElixirSlime</iconPath>
     <displayOrder>100</displayOrder>
-    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
-    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
     <hostile>false</hostile>
-    <cooldownTicksRange>2000</cooldownTicksRange>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <jobDef>CastJump</jobDef>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
-      <verbClass>Verb_CastAbilityTouch</verbClass>
-      <drawAimPie>false</drawAimPie>
-      <range>-1</range>
-      <warmupTime>2.5</warmupTime>
+      <verbClass>BigAndSmall.Verb_CastAbilityJumpON</verbClass>
+      <label>The ambulance is here!</label>
+      <drawAimPie>true</drawAimPie>
+      <range>6.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>AcidSpray_Warmup</soundCast>
+      <soundLanding>AcidSpray_Resolve</soundLanding>
+      <requireLineOfSight>true</requireLineOfSight>
       <targetParams>
+        <mustBeSelectable>true</mustBeSelectable>
         <canTargetSelf>false</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>true</canTargetMechs>
         <canTargetBloodfeeders>true</canTargetBloodfeeders>
       </targetParams>
     </verbProperties>
-    <aiCanUse>false</aiCanUse>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
     <comps>
-      <li Class="BigAndSmall.CompProperties_AbilityEngluf">
-        <!--How large the target can be compared to the lamia. 0.80 means max 80% of body size-->
+      <li Class="BigAndSmall.CompProperties_AbilityEnglufJump">
         <relativeSizeThreshold>0.8</relativeSizeThreshold>
         <dealsDamage>false</dealsDamage>
-        <healPerDay>100</healPerDay><!--For testing. Should be 50.-->
+        <healPerDay>40</healPerDay><!--For testing. Should be 40 or so.-->
         <healsScars>true</healsScars>
         <canHealBrain>false</canHealBrain>
         <regularHealingMultiplier>1.5</regularHealingMultiplier>
         <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay>
         <alliesAttackBack>false</alliesAttackBack>
-        <selfDamageMultiplier>0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+        <selfDamageMultiplier>0.5</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
       </li>
-      <!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
-        <!-- <fleckDef>BloodSplash</fleckDef> -->
-      <!-- </li> -->
       <li Class="CompProperties_AbilityRequiresCapacity">
         <capacity>Eating</capacity>
       </li>
@@ -134,6 +137,7 @@
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <cooldownTicksRange>50</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <label>regurgitate</label>

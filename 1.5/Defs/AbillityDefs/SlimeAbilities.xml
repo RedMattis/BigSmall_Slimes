@@ -8,6 +8,7 @@
     <cooldownTicksRange>1000</cooldownTicksRange>
     <hostile>false</hostile>
     <aiCanUse>true</aiCanUse>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityJump</verbClass>
       <label>jump</label>
@@ -45,6 +46,7 @@
     <cooldownTicksRange>1000</cooldownTicksRange>
     <hostile>false</hostile>
     <aiCanUse>true</aiCanUse>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityJump</verbClass>
       <label>jump</label>
@@ -120,6 +122,7 @@
     <aiCanUse>true</aiCanUse>
     <displayOrder>101</displayOrder>
     <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>13.9</range>
@@ -150,6 +153,7 @@
     <aiCanUse>false</aiCanUse>
     <displayOrder>101</displayOrder>
     <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>8.9</range>
@@ -218,6 +222,7 @@
     <!-- <category>Sanguophage</category> -->
     <displayOrder>400</displayOrder>
     <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
@@ -260,6 +265,7 @@
     <!-- <category>Sanguophage</category> -->
     <displayOrder>400</displayOrder>
     <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>true</drawAimPie>

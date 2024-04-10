@@ -176,12 +176,12 @@
     </customEffectDescriptions>
     <iconPath>Icons/BS_Engulf</iconPath>
     <abilities>
-      <li>BS_SlimeEngulf</li>
+      <li>BS_SlimeEngulf_New</li>
       <li>BS_SlimeRegurgitate</li>
     </abilities>
     <displayCategory>BS_Slime</displayCategory>
     <descriptionHyperlinks>
-      <AbilityDef>BS_SlimeEngulf</AbilityDef>
+      <AbilityDef>BS_SlimeEngulf_New</AbilityDef>
       <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
     </descriptionHyperlinks>
     <biostatMet>-1</biostatMet>
@@ -222,12 +222,12 @@
     </customEffectDescriptions>
     <iconPath>Icons/BS_ElixirSlime</iconPath>
     <abilities>
-      <li>BS_SlimeEngulfElixir</li>
+      <li>BS_SlimeEngulfElixir_New</li>
       <li>BS_SlimeRegurgitate</li>
     </abilities>
     <displayCategory>BS_Slime</displayCategory>
     <descriptionHyperlinks>
-      <AbilityDef>BS_SlimeEngulfElixir</AbilityDef>
+      <AbilityDef>BS_SlimeEngulfElixir_New</AbilityDef>
       <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
     </descriptionHyperlinks>
     <biostatMet>-2</biostatMet>
