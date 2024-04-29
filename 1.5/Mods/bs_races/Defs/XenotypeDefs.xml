@@ -44,6 +44,7 @@
 			<li>AptitudePoor_Intellectual</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_VerySlowAging</li>
 		</genes>
   </XenotypeDef>
 
@@ -95,6 +96,7 @@
 			<li>AptitudePoor_Intellectual</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_SlowAging</li>
 		</genes>
   </XenotypeDef>
 

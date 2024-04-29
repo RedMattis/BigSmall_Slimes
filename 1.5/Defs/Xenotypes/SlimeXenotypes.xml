@@ -96,6 +96,7 @@
 			<li>ChemicalDependency_Psychite</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_SlowAging</li>
     </genes>
     <forbiddenWeaponClasses>
       <li>LongShots</li>
@@ -257,6 +258,7 @@
 			<li>AptitudePoor_Intellectual</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_SlowAging</li>
 		</genes>
   </XenotypeDef>
 
