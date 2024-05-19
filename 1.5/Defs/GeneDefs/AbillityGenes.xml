@@ -231,7 +231,7 @@
       <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
     </descriptionHyperlinks>
     <biostatMet>-2</biostatMet>
-    <biostatArc>3</biostatArc>
+    <biostatArc>2</biostatArc>
     <minAgeActive>5</minAgeActive>
     <selectionWeight>1</selectionWeight>
     <geneClass>BetterPrerequisites.PGene</geneClass>

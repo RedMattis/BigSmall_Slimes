@@ -128,6 +128,7 @@
                     <li>Eyes</li>
                   </groups>
                   <woundAnchorTag>LeftEye</woundAnchorTag>
+                  <flipGraphic>true</flipGraphic>
                 </li>
                 <li>
                   <def>Eye</def>
@@ -152,6 +153,7 @@
             <li>Arms</li>
             <li>Hands</li>
           </groups>
+          <flipGraphic>true</flipGraphic>
         </li>
         <li>
           <def>Arm</def>
@@ -182,6 +184,7 @@
             <li>Feet</li>
           </groups>
           <woundAnchorTag>LeftLeg</woundAnchorTag>
+          <flipGraphic>true</flipGraphic>
         </li>
         <li>
           <def>Leg</def>

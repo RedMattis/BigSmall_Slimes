@@ -6,13 +6,13 @@
     <iconPath>Icons/BS_Engulf</iconPath>
     <displayOrder>100</displayOrder>
     <hostile>true</hostile>
-    <cooldownTicksRange>2000</cooldownTicksRange>
+    <cooldownTicksRange>1200</cooldownTicksRange>
     <jobDef>CastJump</jobDef>
     <verbProperties>
       <verbClass>BigAndSmall.Verb_CastAbilityJumpON</verbClass>
       <label>Uh-oh</label>
       <drawAimPie>false</drawAimPie>
-      <range>3.9</range>
+      <range>5.9</range>
       <warmupTime>2.0</warmupTime>
       <soundCast>AcidSpray_Warmup</soundCast>
       <soundLanding>AcidSpray_Resolve</soundLanding>

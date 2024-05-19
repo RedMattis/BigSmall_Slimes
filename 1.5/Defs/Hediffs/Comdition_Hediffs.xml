@@ -11,7 +11,7 @@
     <stages>
       <li>
         <label>diminutive</label>
-        <extraTooltip>I've gotten too small to properly function. GIVE ME FOOD!</extraTooltip>
+        <extraTooltip>I've gotten too small to properly function. GIVE ME FOOD!\n\n(You can modify the slime bar to let them grow bigger when food is available.)</extraTooltip>
         <statFactors>
           <SM_BodySizeMultiplier>0.20</SM_BodySizeMultiplier>
         </statFactors>
