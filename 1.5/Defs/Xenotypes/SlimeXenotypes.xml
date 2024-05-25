@@ -169,6 +169,7 @@
     <genes>
       <li>ArchiteMetabolism</li>
       <li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
 			<li>DiseaseFree</li>
 			<li>BS_Fast_TotalHealing</li>
 			<li>TotalHealing</li>
