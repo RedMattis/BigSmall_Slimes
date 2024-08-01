@@ -25,6 +25,9 @@
     <!-- <biostatArc>1</biostatArc> -->
     <minAgeActive>3</minAgeActive>
     <selectionWeight>1</selectionWeight>
+    <overdoseChanceFactor>0</overdoseChanceFactor>
+    <chemical>Psychite</chemical>
+
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
