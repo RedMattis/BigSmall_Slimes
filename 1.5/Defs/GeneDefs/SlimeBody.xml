@@ -7,7 +7,7 @@
   </GeneCategoryDef>
   <GeneDef ParentName="BS_BodyBase">
     <defName>BS_SludgeBody</defName>
-    <label>sludge body apperance</label>
+    <label>sludge body appearance</label>
     <labelShortAdj>sludge body</labelShortAdj>
     <description>Carriers of this gene have sludgy slime body.</description>
     <biostatCpx>1</biostatCpx>
@@ -28,16 +28,11 @@
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <useSkinShader>true</useSkinShader>
+        <useSkinShader>false</useSkinShader>
         <debugLabel>Fur</debugLabel>
         <nodeClass>PawnRenderNode_Fur</nodeClass>
         <workerClass>PawnRenderNodeWorker_Fur</workerClass>
@@ -91,16 +86,11 @@
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <useSkinShader>true</useSkinShader>
+        <useSkinShader>false</useSkinShader>
         <debugLabel>Fur</debugLabel>
         <nodeClass>PawnRenderNode_Fur</nodeClass>
         <workerClass>PawnRenderNodeWorker_Fur</workerClass>
@@ -143,16 +133,11 @@
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <useSkinShader>true</useSkinShader>
+        <useSkinShader>false</useSkinShader>
         <debugLabel>Fur</debugLabel>
         <nodeClass>PawnRenderNode_Fur</nodeClass>
         <workerClass>PawnRenderNodeWorker_Fur</workerClass>

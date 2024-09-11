@@ -13,10 +13,6 @@
       <li>OriginTribal</li>
     </allowedPlaceTags>
     <iconPath>World/WorldObjects/Expanding/Village</iconPath>
-    <preferredWeaponClasses>
-      <!-- <noble>Neolithic</noble>
-      <despised>Ultratech</despised> -->
-    </preferredWeaponClasses>
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Totemic</category>

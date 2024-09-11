@@ -2,7 +2,7 @@
 
   <GeneDef>
 		<defName>BS_SludgeBodySwitcher</defName>
-		<label>sludge body switch</label>
+		<label>sludge morphology</label>
 		<labelShortAdj>sludge body</labelShortAdj>
 		<description>Carriers of this gene have sludgy slime body barely remotely similar to that of baseline humans.</description>
 		<biostatCpx>1</biostatCpx>
@@ -15,11 +15,7 @@
       <li>ThingDefSwap</li>
     </exclusionTags>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
       <li Class="BetterPrerequisites.GeneExtension">
 				<thingDefSwap>BS_Sludge</thingDefSwap>
 			</li>
@@ -29,7 +25,7 @@
 
 	<GeneDef>
 		<defName>BS_SlimeBodySwitcher</defName>
-		<label>slime blob body switch</label>
+		<label>slime morphology</label>
 		<labelShortAdj>slime body</labelShortAdj>
 		<description>Carriers of this gene have slime body that only at best superficially resembles a baseliner.</description>
 		<biostatCpx>1</biostatCpx>
@@ -42,11 +38,7 @@
       <li>ThingDefSwap</li>
     </exclusionTags>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
       <li Class="BetterPrerequisites.GeneExtension">
 				<thingDefSwap>BS_Slime</thingDefSwap>
 			</li>
