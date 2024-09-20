@@ -81,7 +81,7 @@
       <body>BS_SlimeBody</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
-      <gestationPeriodDays>45</gestationPeriodDays>
+      <gestationPeriodDays>18</gestationPeriodDays>
 
       <specificMeatDef>InsectJelly</specificMeatDef>
       <useLeatherFrom>Cobra</useLeatherFrom>
@@ -182,7 +182,7 @@
       <body>BS_SlimeBody</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
-      <gestationPeriodDays>45</gestationPeriodDays>
+      <gestationPeriodDays>18</gestationPeriodDays>
 
       <specificMeatDef>InsectJelly</specificMeatDef>
       <useLeatherFrom>Cobra</useLeatherFrom>
