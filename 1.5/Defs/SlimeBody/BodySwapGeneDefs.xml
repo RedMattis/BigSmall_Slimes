@@ -12,7 +12,7 @@
     <displayCategory>BS_Slime</displayCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <exclusionTags>
-      <li>ThingDefSwap</li>
+      <li>BS_BodySwap</li>
     </exclusionTags>
     <modExtensions>
 			
@@ -35,7 +35,7 @@
 		<iconPath>Icons/bs_slimebody_smooth</iconPath>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <exclusionTags>
-      <li>ThingDefSwap</li>
+      <li>BS_BodySwap</li>
     </exclusionTags>
     <modExtensions>
 			

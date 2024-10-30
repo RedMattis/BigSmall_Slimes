@@ -1,6 +1,6 @@
 <Defs>
 
-  <AlienRace.ThingDef_AlienRace ParentName="Human">
+  <ThingDef ParentName="Human">
     <defName>BS_Slime</defName>
     <label>slime-person</label>
     <description>A humanlike slime.</description>
@@ -90,19 +90,14 @@
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
-    <alienRace>
-      <generalSettings>
-        <humanRecipeImport>true</humanRecipeImport>
-      </generalSettings>
-    </alienRace>
-  </AlienRace.ThingDef_AlienRace>
+  </ThingDef>
 
   <!---->
 
-  <AlienRace.ThingDef_AlienRace ParentName="Human">
+  <ThingDef ParentName="Human">
     <defName>BS_Sludge</defName>
     <label>sapient sludge</label>
     <description>A sapeint sludge-like slime.</description>
@@ -191,13 +186,8 @@
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
-    <alienRace>
-      <generalSettings>
-        <humanRecipeImport>true</humanRecipeImport>
-      </generalSettings>
-    </alienRace>
-  </AlienRace.ThingDef_AlienRace>
+  </ThingDef>
 </Defs>

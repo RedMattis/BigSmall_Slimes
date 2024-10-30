@@ -15,7 +15,7 @@
     <!-- <li IfModActive="RedMattis.LamiasAndOtherSnakes">Mods/Snek</li> -->
     <li IfModActive="nals.facialanimation">1.5/Mods/FacialAnim</li>
     <li IfModActive="RedMattis.BigSmall">1.5/Mods/bs_races</li>
-    <li IfModActive="erdelf.HumanoidAlienRaces">1.5/Mods/HAR</li>
+    <!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.5/Mods/HAR</li> -->
   </v1.5>
   
 </loadFolders>
