@@ -1,6 +1,6 @@
 <Defs>
 
-  <ThingDef ParentName="Human">
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_Slime</defName>
     <label>slime-person</label>
     <description>A humanlike slime.</description>
@@ -97,7 +97,7 @@
 
   <!---->
 
-  <ThingDef ParentName="Human">
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_Sludge</defName>
     <label>sapient sludge</label>
     <description>A sapeint sludge-like slime.</description>
