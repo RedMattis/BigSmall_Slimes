@@ -25,9 +25,7 @@
       <AbilityDef>BS_SlimeJump</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -55,9 +53,7 @@
       <AbilityDef>BS_SlimeFoamJump</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -85,9 +81,7 @@
       <AbilityDef>BS_SlimeFireJump</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -117,9 +111,7 @@
       <AbilityDef>BS_SlimeGreater_Acidspray</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -139,9 +131,7 @@
       <AbilityDef>BS_SlimeFireSpew</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -243,9 +233,7 @@
     <biostatArc>1</biostatArc>
     <minAgeActive>18</minAgeActive>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -271,9 +259,7 @@
         <li><symbol>tender</symbol></li>
       </suffixSymbols>
     </symbolPack>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
 

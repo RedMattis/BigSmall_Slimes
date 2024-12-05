@@ -47,16 +47,16 @@
     <defName>BS_SlimeBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/Slime/Naked_Hulk</Hulk>
+      <Hulk>BS_Bodies/Slime/Naked_Hulk</Hulk>
 
-      <Male>Humanlike/Bodies/Slime/Naked_Male</Male>
-      <Female>Humanlike/Bodies/Slime/Naked_Female</Female>
+      <Male>BS_Bodies/Slime/Naked_Male</Male>
+      <Female>BS_Bodies/Slime/Naked_Female</Female>
       
-      <Fat>Humanlike/Bodies/Slime/Naked_Fat</Fat>
-      <Thin>Humanlike/Bodies/Slime/Naked_Thin</Thin>
+      <Fat>BS_Bodies/Slime/Naked_Fat</Fat>
+      <Thin>BS_Bodies/Slime/Naked_Thin</Thin>
       
-      <Child>Humanlike/Bodies/BS_NoFur</Child>
-      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -109,16 +109,16 @@
     <defName>BS_SlimeSmoothBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/SmoothSlime/Naked_Hulk</Hulk>
+      <Hulk>BS_Bodies/SmoothSlime/Naked_Hulk</Hulk>
 
-      <Male>Humanlike/Bodies/SmoothSlime/Naked_Male</Male>
-      <Female>Humanlike/Bodies/SmoothSlime/Naked_Female</Female>
+      <Male>BS_Bodies/SmoothSlime/Naked_Male</Male>
+      <Female>BS_Bodies/SmoothSlime/Naked_Female</Female>
       
-      <Fat>Humanlike/Bodies/SmoothSlime/Naked_Fat</Fat>
-      <Thin>Humanlike/Bodies/SmoothSlime/Naked_Thin</Thin>
+      <Fat>BS_Bodies/SmoothSlime/Naked_Fat</Fat>
+      <Thin>BS_Bodies/SmoothSlime/Naked_Thin</Thin>
       
-      <Child>Humanlike/Bodies/BS_NoFur</Child>
-      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -159,16 +159,16 @@
     <defName>BS_SlimeFractureBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/CrackedSlime/Naked_Hulk</Hulk>
+      <Hulk>BS_Bodies/CrackedSlime/Naked_Hulk</Hulk>
 
-      <Male>Humanlike/Bodies/CrackedSlime/Naked_Male</Male>
-      <Female>Humanlike/Bodies/CrackedSlime/Naked_Female</Female>
+      <Male>BS_Bodies/CrackedSlime/Naked_Male</Male>
+      <Female>BS_Bodies/CrackedSlime/Naked_Female</Female>
       
-      <Fat>Humanlike/Bodies/CrackedSlime/Naked_Fat</Fat>
-      <Thin>Humanlike/Bodies/CrackedSlime/Naked_Thin</Thin>
+      <Fat>BS_Bodies/CrackedSlime/Naked_Fat</Fat>
+      <Thin>BS_Bodies/CrackedSlime/Naked_Thin</Thin>
       
-      <Child>Humanlike/Bodies/BS_NoFur</Child>
-      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
 </Defs>
