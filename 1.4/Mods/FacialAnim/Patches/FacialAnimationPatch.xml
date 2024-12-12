@@ -14,7 +14,7 @@
 
 				<!--New Stuff-->
 				<graphicPaths>
-					<li>Humanlike/Heads/Slime/facial_animation/SlimeHead_NoEyes</li>
+					<li>BS_Heads/Slime/facial_animation/SlimeHead_NoEyes</li>
 				</graphicPaths>
 				<layer>PostSkin</layer>		
 				<useSkinShader>false</useSkinShader>

@@ -62,7 +62,7 @@
 
   <HeadTypeDef ParentName="AverageBase">
     <defName>BS_SlimeHead</defName>
-    <graphicPath>Humanlike/Heads/Slime/normal</graphicPath>
+    <graphicPath>BS_Heads/Slime/normal</graphicPath>
     <randomChosen>false</randomChosen>
     <gender>None</gender>
     <selectionWeight>99999</selectionWeight>

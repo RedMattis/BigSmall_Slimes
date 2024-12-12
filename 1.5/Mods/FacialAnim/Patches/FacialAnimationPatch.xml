@@ -8,7 +8,7 @@
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<texPaths>
-					<li>Humanlike/Heads/Slime/facial_animation/SlimeHead_NoEyes</li>
+					<li>BS_Heads/Slime/facial_animation/SlimeHead_NoEyes</li>
 				</texPaths>
 				<useSkinShader>false</useSkinShader>
 				<colorType>Skin</colorType>
