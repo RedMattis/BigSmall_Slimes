@@ -4,7 +4,7 @@
   <!-- <Operation Class="PatchOperationAdd">
     <xpath>Defs/GeneDef[defName="BS_SludgeBody"]/modExtensions</xpath>
     <value>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_Sludge</thingDefSwap>
 			</li>
     </value>
@@ -13,7 +13,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/GeneDef[defName="BS_SlimeBlobBody"]/modExtensions</xpath>
     <value>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_Slime</thingDefSwap>
 			</li>
     </value>

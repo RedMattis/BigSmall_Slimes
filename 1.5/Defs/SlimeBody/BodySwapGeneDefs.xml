@@ -16,7 +16,7 @@
     </exclusionTags>
     <modExtensions>
 			
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_Sludge</thingDefSwap>
 			</li>
 		</modExtensions>
@@ -39,7 +39,7 @@
     </exclusionTags>
     <modExtensions>
 			
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_Slime</thingDefSwap>
 			</li>
 		</modExtensions>
