@@ -93,6 +93,7 @@
     <iconPath>Icons/BS_OgreCannibalize</iconPath>
     <displayOrder>100</displayOrder>
     <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
     <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
     <hostile>true</hostile>
     <cooldownTicksRange>2000</cooldownTicksRange>
