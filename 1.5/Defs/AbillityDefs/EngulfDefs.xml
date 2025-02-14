@@ -29,7 +29,7 @@
     <ai_IsOffensive>true</ai_IsOffensive>
     <comps>
       <li Class="BigAndSmall.CompProperties_AbilityEnglufJump">
-        <relativeSizeThreshold>0.8</relativeSizeThreshold>
+        <relativeSizeThreshold>0.6~1.0</relativeSizeThreshold>
         <internalBaseDamage>8</internalBaseDamage>
         <selfDamageMultiplier>0.75</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
       </li>
@@ -70,7 +70,7 @@
     <ai_IsOffensive>true</ai_IsOffensive>
     <comps>
       <li Class="BigAndSmall.CompProperties_AbilityEnglufJump">
-        <relativeSizeThreshold>0.8</relativeSizeThreshold>
+        <relativeSizeThreshold>0.6~1.0</relativeSizeThreshold>
         <dealsDamage>false</dealsDamage>
         <healPerDay>40</healPerDay><!--For testing. Should be 40 or so.-->
         <healsScars>true</healsScars>
@@ -113,7 +113,7 @@
     <comps>
       <li Class="BigAndSmall.CompProperties_AbilityEngluf">
         <!--How large the target can be compared to the lamia. 0.80 means max 80% of body size-->
-        <relativeSizeThreshold>0.35</relativeSizeThreshold>
+        <relativeSizeThreshold>0.6~1.0</relativeSizeThreshold>
         <max>0.5</max>
         <internalBaseDamage>8</internalBaseDamage>
         <selfDamageMultiplier>1</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
