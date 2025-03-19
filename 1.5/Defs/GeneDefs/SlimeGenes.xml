@@ -12,6 +12,7 @@
       <li>0.25</li>
       <li>0.5</li>
       <li>0.75</li>
+      <li>1</li>
     </resourceGizmoThresholds>
     <showGizmoOnWorldView>true</showGizmoOnWorldView>
     <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
@@ -29,7 +30,6 @@
     <chemical>Psychite</chemical>
 
     <modExtensions>
-			
       <li Class="BigAndSmall.BS_GeneSlimeProps">
         <resourceMaxOffset>0.25</resourceMaxOffset>
 			</li>
@@ -57,7 +57,6 @@
 			
       <li Class="BigAndSmall.BS_GeneSlimeProps">
         <resourceMaxOffset>2.75</resourceMaxOffset>
-        <resourceStartOffset>0.5</resourceStartOffset>
 			</li>
 		</modExtensions>
   </GeneDef>

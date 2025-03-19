@@ -11,6 +11,11 @@
       <li>TalkingSource</li>
       <li>BloodPumpingSource</li>
     </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Torso</li></importAllRecipesFrom>
+      </li>
+    </modExtensions>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -25,6 +30,11 @@
     <tags>
       <li>Spine</li>
     </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Spine</li></importAllRecipesFrom>
+      </li>
+    </modExtensions>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -36,6 +46,11 @@
       <li>MetabolismSource</li>
       <li>EatingSource</li>
     </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Stomach</li></importAllRecipesFrom>
+      </li>
+    </modExtensions>
   </BodyPartDef>
   
   <BodyDef>
