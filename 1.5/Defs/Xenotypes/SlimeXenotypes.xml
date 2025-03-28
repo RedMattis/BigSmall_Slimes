@@ -368,6 +368,7 @@
     <chanceToUseNameMaker>0.3</chanceToUseNameMaker>
     <genes>
 			<li>BS_SlimeEngulf</li>
+			<li>BS_NoFamilyRelations</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			<li>BS_Fast_TotalHealing</li>
