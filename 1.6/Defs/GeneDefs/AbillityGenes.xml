@@ -25,12 +25,7 @@
       <AbilityDef>BS_SlimeJump</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -58,12 +53,7 @@
       <AbilityDef>BS_SlimeFoamJump</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -91,12 +81,7 @@
       <AbilityDef>BS_SlimeFireJump</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -126,12 +111,7 @@
       <AbilityDef>BS_SlimeGreater_Acidspray</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -151,12 +131,7 @@
       <AbilityDef>BS_SlimeFireSpew</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -171,25 +146,22 @@
     </customEffectDescriptions>
     <iconPath>Icons/BS_Engulf</iconPath>
     <abilities>
-      <li>BS_SlimeEngulf</li>
+      <li>BS_SlimeEngulf_New</li>
       <li>BS_SlimeRegurgitate</li>
     </abilities>
     <displayCategory>BS_Slime</displayCategory>
     <descriptionHyperlinks>
-      <AbilityDef>BS_SlimeEngulf</AbilityDef>
+      <AbilityDef>BS_SlimeEngulf_New</AbilityDef>
       <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
     </descriptionHyperlinks>
     <biostatMet>-1</biostatMet>
     <biostatArc>1</biostatArc>
     <minAgeActive>5</minAgeActive>
     <selectionWeight>1</selectionWeight>
-    <geneClass>BetterPrerequisites.PGene</geneClass>
+    
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+			
+      <li Class="BigAndSmall.GenePrerequisites">
         <prerequisiteSets>
           <li>
             <type>AnyOf</type>
@@ -216,25 +188,22 @@
     </customEffectDescriptions>
     <iconPath>Icons/BS_ElixirSlime</iconPath>
     <abilities>
-      <li>BS_SlimeEngulfElixir</li>
+      <li>BS_SlimeEngulfElixir_New</li>
       <li>BS_SlimeRegurgitate</li>
     </abilities>
     <displayCategory>BS_Slime</displayCategory>
     <descriptionHyperlinks>
-      <AbilityDef>BS_SlimeEngulfElixir</AbilityDef>
+      <AbilityDef>BS_SlimeEngulfElixir_New</AbilityDef>
       <AbilityDef>BS_SlimeRegurgitate</AbilityDef>
     </descriptionHyperlinks>
     <biostatMet>-2</biostatMet>
-    <biostatArc>3</biostatArc>
+    <biostatArc>2</biostatArc>
     <minAgeActive>5</minAgeActive>
     <selectionWeight>1</selectionWeight>
-    <geneClass>BetterPrerequisites.PGene</geneClass>
+    
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+			
+      <li Class="BigAndSmall.GenePrerequisites">
         <prerequisiteSets>
           <li>
             <type>AnyOf</type>
@@ -264,12 +233,7 @@
     <biostatArc>1</biostatArc>
     <minAgeActive>18</minAgeActive>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -295,12 +259,7 @@
         <li><symbol>tender</symbol></li>
       </suffixSymbols>
     </symbolPack>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
+
   </GeneDef>
 
 

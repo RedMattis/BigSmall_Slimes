@@ -96,6 +96,7 @@
 			<li>ChemicalDependency_Psychite</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_SlowAging</li>
     </genes>
     <forbiddenWeaponClasses>
       <li>LongShots</li>
@@ -168,6 +169,7 @@
     <genes>
       <li>ArchiteMetabolism</li>
       <li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
 			<li>DiseaseFree</li>
 			<li>BS_Fast_TotalHealing</li>
 			<li>TotalHealing</li>
@@ -257,6 +259,7 @@
 			<li>AptitudePoor_Intellectual</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_SlowAging</li>
 		</genes>
   </XenotypeDef>
 
@@ -356,8 +359,8 @@
   <XenotypeDef>
     <defName>BS_ToxicSlduge</defName>
     <label>Toxic Sludge</label>
-    <description>Repulsive piled of sludgy waste capable of taking a vaguely humanoid form. Larger specimen will sometimes attempt to swallow smaller creatures whole. They are generally believed to have originally been some other type of slime, though some believe they were deliberately created as a weapon.</description>
-    <descriptionShort>Repulsive piled of sludgy waste.</descriptionShort>
+    <description>Repulsive pile of sludgy waste capable of taking a vaguely humanoid form. Larger specimen will sometimes attempt to swallow smaller creatures whole. They are generally believed to have originally been some other type of slime, though some believe they were deliberately created as a weapon.</description>
+    <descriptionShort>Repulsive pile of sludgy waste.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
     <inheritable>true</inheritable>
     <nameMaker>NamerSlime</nameMaker>
@@ -365,6 +368,7 @@
     <chanceToUseNameMaker>0.3</chanceToUseNameMaker>
     <genes>
 			<li>BS_SlimeEngulf</li>
+			<li>BS_NoFamilyRelations</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			<li>BS_Fast_TotalHealing</li>

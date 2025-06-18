@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="BS_SludgeBody"]/renderNodeProperties</xpath>
+		<value>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>BS_Heads/Slime/facial_animation/SlimeHead_NoEyes</li>
+				</texPaths>
+				<useSkinShader>false</useSkinShader>
+				<colorType>Skin</colorType>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<parentTagDef>Head</parentTagDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>

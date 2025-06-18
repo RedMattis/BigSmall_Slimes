@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneCategoryDef>
+    <defName>BS_Slime</defName>
+    <label>Slime</label>
+    <displayPriorityInXenotype>-389</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_SludgeBody</defName>
+    <label>sludge body appearance</label>
+    <labelShortAdj>sludge body</labelShortAdj>
+    <description>Carriers of this gene have sludgy slime body.</description>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>Icons/bs_slimebody</iconPath>
+    <displayCategory>BS_Slime</displayCategory>
+    
+    <fur>BS_SlimeBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>true</skinIsHairColor>
+    <forcedHeadTypes>
+      <li>BS_SlimeHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <!-- <colorType>Skin</colorType> -->
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <FurDef>
+    <defName>BS_SlimeBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>BS_Bodies/Slime/Naked_Hulk</Hulk>
+      <Male>BS_Bodies/Slime/Naked_Male</Male>
+      <Female>BS_Bodies/Slime/Naked_Female</Female>
+      <Fat>BS_Bodies/Slime/Naked_Fat</Fat>
+      <Thin>BS_Bodies/Slime/Naked_Thin</Thin>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_SlimeHead</defName>
+    <graphicPath>BS_Heads/Slime/normal</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_SludgeBody</li>
+    </requiredGenes>
+  </HeadTypeDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_SlimeBlobBody</defName>
+    <label>slime body appearance</label>
+    <labelShortAdj>slime body</labelShortAdj>
+    <description>Carriers of this gene have bouncy slime body.</description>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <displayCategory>BS_Slime</displayCategory>
+    <iconPath>Icons/bs_slimebody_smooth</iconPath>
+    
+    <fur>BS_SlimeSmoothBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>true</skinIsHairColor>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <!-- <colorType>Skin</colorType> -->
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <FurDef>
+    <defName>BS_SlimeSmoothBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>BS_Bodies/SmoothSlime/Naked_Hulk</Hulk>
+      <Male>BS_Bodies/SmoothSlime/Naked_Male</Male>
+      <Female>BS_Bodies/SmoothSlime/Naked_Female</Female>
+      <Fat>BS_Bodies/SmoothSlime/Naked_Fat</Fat>
+      <Thin>BS_Bodies/SmoothSlime/Naked_Thin</Thin>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_SlimeFractureBody</defName>
+    <label>slime fracture body</label>
+    <labelShortAdj>fracture</labelShortAdj>
+    <description>Carriers of this gene have slime body with cracks across it.</description>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <displayCategory>BS_Slime</displayCategory>
+    <iconPath>Icons/bs_slimebody_creck</iconPath>
+    <fur>BS_SlimeFractureBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>true</skinIsHairColor>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <!-- <colorType>Skin</colorType> -->
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <FurDef>
+    <defName>BS_SlimeFractureBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>BS_Bodies/CrackedSlime/Naked_Hulk</Hulk>
+      <Male>BS_Bodies/CrackedSlime/Naked_Male</Male>
+      <Female>BS_Bodies/CrackedSlime/Naked_Female</Female>
+      <Fat>BS_Bodies/CrackedSlime/Naked_Fat</Fat>
+      <Thin>BS_Bodies/CrackedSlime/Naked_Thin</Thin>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>

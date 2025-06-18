@@ -11,6 +11,11 @@
       <li>TalkingSource</li>
       <li>BloodPumpingSource</li>
     </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Torso</li></importAllRecipesFrom>
+      </li>
+    </modExtensions>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -25,6 +30,11 @@
     <tags>
       <li>Spine</li>
     </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Spine</li></importAllRecipesFrom>
+      </li>
+    </modExtensions>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -36,6 +46,11 @@
       <li>MetabolismSource</li>
       <li>EatingSource</li>
     </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Stomach</li></importAllRecipesFrom>
+      </li>
+    </modExtensions>
   </BodyPartDef>
   
   <BodyDef>
@@ -165,6 +180,7 @@
                     <li>Eyes</li>
                   </groups>
                   <woundAnchorTag>LeftEye</woundAnchorTag>
+                  <flipGraphic>true</flipGraphic>
                 </li>
                 <li>
                   <def>Eye</def>
@@ -189,6 +205,7 @@
           <groups>
             <li>Shoulders</li>
           </groups>
+          <flipGraphic>true</flipGraphic>
           <parts>
             <li>
               <def>Arm</def>
@@ -197,6 +214,7 @@
               <groups>
                 <li>Arms</li>
               </groups>
+              <flipGraphic>true</flipGraphic>
               <parts>
                 <li>
                   <def>Hand</def>
@@ -207,7 +225,7 @@
                     <li>Hands</li>
                     <li>LeftHand</li>
                   </groups>
-                  
+                  <flipGraphic>true</flipGraphic>
                 </li>
               </parts>
             </li>
@@ -261,6 +279,7 @@
             <li>Legs</li>
           </groups>
           <woundAnchorTag>LeftLeg</woundAnchorTag>
+          <flipGraphic>true</flipGraphic>
           <parts>
             <li>
               <def>Foot</def>
@@ -269,6 +288,7 @@
               <groups>
                 <li>Feet</li>
               </groups>
+              <flipGraphic>true</flipGraphic>
             </li>
           </parts>
         </li>

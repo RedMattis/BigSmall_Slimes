@@ -44,6 +44,7 @@
 			<li>AptitudePoor_Intellectual</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_VerySlowAging</li>
 		</genes>
   </XenotypeDef>
 
@@ -95,13 +96,14 @@
 			<li>AptitudePoor_Intellectual</li>
       <li>Hair_Grayless</li>
       <li>BS_SlimeProliferation</li>
+			<li>BS_SlowAging</li>
 		</genes>
   </XenotypeDef>
 
   <XenotypeDef>
     <defName>BS_BananaSplitSlimeGiant</defName>
     <label>greater horned banana split neko cream slime</label>
-    <description>Greater Ho¤"''&lt;/descriptiå~\n\nWhat did you think would happen? Combining a slime mod with th#\\&amp;(tary&gt;\n\n¤y reportedly among the Frost Jotun for some reason.\n\nOn that final note Skadi commented:\n\n"Why a cat though? A wolf would have fit our theme much better."</description>
+    <description>Greater Horned Ba¤"''&lt;/descriptiå~\n\n#\\&amp;tary&gt;\n\n¤y reportedly often seen among the Frost Jotun for some reason.\n\nOn that final note Skadi commented:\n\n"Sure, but why a cat though? Wouldn't a wolf or a bear fit our theme much better?"</description>
 		<!-- <descriptionShort>Wait, that's illegal.</descriptionShort> -->
     <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
     <inheritable>true</inheritable>

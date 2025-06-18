@@ -20,6 +20,10 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
     </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>31</configurationListOrderPriority>
     <permanentEnemy>false</permanentEnemy>
@@ -35,7 +39,6 @@
         <BS_EmperorSlime>0.05</BS_EmperorSlime>
         <BS_ElixirSlime>0.025</BS_ElixirSlime>
       </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
     
     <maxPawnCostPerTotalPointsCurve>

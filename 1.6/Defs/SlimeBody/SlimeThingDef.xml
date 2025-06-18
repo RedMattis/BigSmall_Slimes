@@ -1,0 +1,106 @@
+<Defs>
+
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_Slime</defName>
+    <label>slime-person</label>
+    <description>A humanlike slime.</description>
+    <statBases>
+      <MarketValue>1750</MarketValue>
+      <ComfyTemperatureMin>16</ComfyTemperatureMin>
+      <ComfyTemperatureMax>26</ComfyTemperatureMax>
+      <LeatherAmount>25</LeatherAmount>
+      <RoyalFavorValue>4</RoyalFavorValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <makesFootprints>false</makesFootprints>
+      <body>BS_SlimeBody</body>
+      <gestationPeriodDays>8</gestationPeriodDays>
+      <specificMeatDef>InsectJelly</specificMeatDef>
+      <useLeatherFrom>Cobra</useLeatherFrom>
+    </race>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension"> <raceHediff>BS_Slime_Race</raceHediff> </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_DefaultRaceTracker">
+    <defName>BS_Slime_Race</defName>
+    <description>a slime</description>
+    <label>slime-person</label>
+    <stages Inherit="False"/>
+    <comps> <li Class="BigAndSmall.CompProperties_Race"/> </comps>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>Icons/bs_slimebody_smooth</traitIcon>
+        <romanceTags>
+          <HumanlikeSlime>1.0</HumanlikeSlime>
+          <Humanlike>0.65</Humanlike>
+        </romanceTags>
+      </li> 
+    </modExtensions>
+  </HediffDef>
+
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_Sludge</defName>
+    <label>sapient sludge</label>
+    <description>A sapeint sludge-like slime.</description>
+    <statBases>
+      <MarketValue>1750</MarketValue>
+      <ComfyTemperatureMin>16</ComfyTemperatureMin>
+      <ComfyTemperatureMax>26</ComfyTemperatureMax>
+      <LeatherAmount>25</LeatherAmount>
+      <RoyalFavorValue>3</RoyalFavorValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <makesFootprints>false</makesFootprints>
+      <body>BS_SlimeBody</body>
+      <gestationPeriodDays>8</gestationPeriodDays>
+      <specificMeatDef>InsectJelly</specificMeatDef>
+      <useLeatherFrom>Cobra</useLeatherFrom>
+    </race>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension"> <raceHediff>BS_SlimeSludge_Race</raceHediff> </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_DefaultRaceTracker">
+    <defName>BS_SlimeSludge_Race</defName>
+    <description>a sludge</description>
+    <label>sludge-person</label>
+    <stages Inherit="False"/>
+    <comps> <li Class="BigAndSmall.CompProperties_Race"/> </comps>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>Icons/bs_slimebody</traitIcon>
+        <romanceTags>
+          <HumanlikeSlime>1.0</HumanlikeSlime>
+          <Humanlike>0.65</Humanlike>
+        </romanceTags>
+      </li> 
+    </modExtensions>
+  </HediffDef>
+</Defs>

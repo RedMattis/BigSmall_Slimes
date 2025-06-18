@@ -1,46 +1,8 @@
 <Defs>
-  <BodyPartDef>
-    <defName>BS_SlimeBody</defName>
-    <label>slime body</label>
-    <hitPoints>70</hitPoints>
-    <skinCovered>true</skinCovered>
-    <canScarify>true</canScarify>
-    <frostbiteVulnerability>0.5</frostbiteVulnerability>
-    <tags>
-      <li>EatingSource</li>
-      <li>TalkingSource</li>
-      <li>BloodPumpingSource</li>
-    </tags>
-  </BodyPartDef>
 
-  <BodyPartDef>
-    <defName>BS_SlimeSpine</defName>
-    <label>structual elements</label>
-    <hitPoints>30</hitPoints>
-    <permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <solid>true</solid>
-    <bleedRate>0</bleedRate>
-    <canSuggestAmputation>false</canSuggestAmputation>
-    <tags>
-      <li>Spine</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>BS_SlimeBigStomach</defName>
-    <label>stomach</label>
-    <hitPoints>30</hitPoints>
-    <skinCovered>false</skinCovered>
-    <tags>
-      <li>MetabolismSource</li>
-      <li>EatingSource</li>
-    </tags>
-  </BodyPartDef>
-  
   <BodyDef>
-    <defName>BS_SlimeBody</defName>
-    <label>sapient slime</label>
+    <defName>BS_SludgeBody</defName>
+    <label>sapient sludge</label>
     <corePart>
       <def>BS_SlimeBody</def>
       <height>Middle</height>
@@ -79,7 +41,7 @@
         <li>
           <def>Heart</def>
           <customLabel>right vesicle</customLabel>
-          <coverage>0.004</coverage>
+          <coverage>0.003</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -88,7 +50,16 @@
         <li>
           <def>Heart</def>
           <customLabel>left vesicle</customLabel>
-          <coverage>0.004</coverage>
+          <coverage>0.003</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Heart</def>
+          <customLabel>lower vesicle</customLabel>
+          <coverage>0.003</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -96,16 +67,7 @@
         </li>
         <li>
           <def>Lung</def>
-          <customLabel>left aerogel sac</customLabel>
-          <coverage>0.025</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Lung</def>
-          <customLabel>right aerogel sac</customLabel>
+          <customLabel>aerogel sac</customLabel>
           <coverage>0.025</coverage>
           <depth>Inside</depth>
           <groups>
@@ -146,6 +108,7 @@
           <groups>
             <li>Neck</li>
           </groups>
+          <customLabel>lower head</customLabel>
           <parts>
             <li>
               <def>Head</def>
@@ -165,6 +128,7 @@
                     <li>Eyes</li>
                   </groups>
                   <woundAnchorTag>LeftEye</woundAnchorTag>
+                  <flipGraphic>true</flipGraphic>
                 </li>
                 <li>
                   <def>Eye</def>
@@ -176,73 +140,31 @@
                   </groups>
                   <woundAnchorTag>RightEye</woundAnchorTag>
                 </li>
-                
               </parts>
             </li>
           </parts>
         </li>
         <li>
-          <def>Shoulder</def>
-          <customLabel>left shoulder</customLabel>
+          <def>Arm</def>
           <coverage>0.12</coverage>
           <woundAnchorTag>LeftShoulder</woundAnchorTag>
           <groups>
             <li>Shoulders</li>
+            <li>Arms</li>
+            <li>Hands</li>
           </groups>
-          <parts>
-            <li>
-              <def>Arm</def>
-              <customLabel>left arm</customLabel>
-              <coverage>0.77</coverage>
-              <groups>
-                <li>Arms</li>
-              </groups>
-              <parts>
-                <li>
-                  <def>Hand</def>
-                  <customLabel>left hand</customLabel>
-                  <coverage>0.14</coverage>
-                  <height>Bottom</height>
-                  <groups>
-                    <li>Hands</li>
-                    <li>LeftHand</li>
-                  </groups>
-                  
-                </li>
-              </parts>
-            </li>
-          </parts>
+          <flipGraphic>true</flipGraphic>
         </li>
         <li>
-          <def>Shoulder</def>
-          <customLabel>right shoulder</customLabel>
+          <def>Arm</def>
           <coverage>0.12</coverage>
           <woundAnchorTag>RightShoulder</woundAnchorTag>
           <groups>
             <li>Shoulders</li>
+            <li>Arms</li>
+            <li>Hands</li>
+            <li>RightHand</li>
           </groups>
-          <parts>
-            <li>
-              <def>Arm</def>
-              <customLabel>right arm</customLabel>
-              <coverage>0.77</coverage>
-              <groups>
-                <li>Arms</li>
-              </groups>
-              <parts>
-                <li>
-                  <def>Hand</def>
-                  <customLabel>right hand</customLabel>
-                  <coverage>0.14</coverage>
-                  <height>Bottom</height>
-                  <groups>
-                    <li>Hands</li>
-                    <li>RightHand</li>
-                  </groups>
-                </li>
-              </parts>
-            </li>
-          </parts>
         </li>
         <li>
           <def>Waist</def>
@@ -259,18 +181,10 @@
           <height>Bottom</height>
           <groups>
             <li>Legs</li>
+            <li>Feet</li>
           </groups>
           <woundAnchorTag>LeftLeg</woundAnchorTag>
-          <parts>
-            <li>
-              <def>Foot</def>
-              <customLabel>left foot</customLabel>
-              <coverage>0.1</coverage>
-              <groups>
-                <li>Feet</li>
-              </groups>
-            </li>
-          </parts>
+          <flipGraphic>true</flipGraphic>
         </li>
         <li>
           <def>Leg</def>
@@ -279,18 +193,9 @@
           <height>Bottom</height>
           <groups>
             <li>Legs</li>
+            <li>Feet</li>
           </groups>
           <woundAnchorTag>RightLeg</woundAnchorTag>
-          <parts>
-            <li>
-              <def>Foot</def>
-              <customLabel>right foot</customLabel>
-              <coverage>0.1</coverage>
-              <groups>
-                <li>Feet</li>
-              </groups>
-            </li>
-          </parts>
         </li>
       </parts>
     </corePart>

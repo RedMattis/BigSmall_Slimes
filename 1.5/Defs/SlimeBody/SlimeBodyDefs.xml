@@ -69,7 +69,7 @@
         <li>
           <def>Brain</def>
           <customLabel>slime core</customLabel>
-          <coverage>0.02</coverage>
+          <coverage>0.005</coverage>
           <groups>
             <li>Torso</li>
           </groups>

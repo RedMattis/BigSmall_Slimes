@@ -13,10 +13,6 @@
       <li>OriginTribal</li>
     </allowedPlaceTags>
     <iconPath>World/WorldObjects/Expanding/Village</iconPath>
-    <preferredWeaponClasses>
-      <!-- <noble>Neolithic</noble>
-      <despised>Ultratech</despised> -->
-    </preferredWeaponClasses>
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Totemic</category>
@@ -109,6 +105,7 @@
         <li>firstNamePrefix->marsh</li>
         <li>firstNamePrefix->puff</li>
         <li>firstNamePrefix->lard</li>
+        <li>firstNamePrefix->grignr</li>
         <li>firstNamePrefix->haribo</li>
         <li>firstNamePrefix->moshi</li>
         <li>firstNamePrefix->small</li>
@@ -187,6 +184,7 @@
         <li>firstNameSuffix->gummy</li>
         <li>firstNameSuffix->jelly</li>
         <li>firstNameSuffix->drop</li>
+        <li>firstNameSuffix->son</li>
         <li>firstNameSuffix->twirl</li>
         <li>firstNameSuffix->gum</li>
         <li>firstNameSuffix->taffy</li>
