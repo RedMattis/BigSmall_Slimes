@@ -396,7 +396,8 @@
 			<li>Robust</li>
 			<li>VU_Libido_None</li>
 			<li>BS_NotFlirty</li>
-			<li>Beauty_VeryUgly</li>
+      <li>BS_AlienApperanceStandards_Lesser</li>
+			<li>Beauty_Ugly</li>
 			<li>BS_SludgeBody</li>
 			<li>Hair_MidBlack</li>
 			<li>BS_SlimeAttack</li>
